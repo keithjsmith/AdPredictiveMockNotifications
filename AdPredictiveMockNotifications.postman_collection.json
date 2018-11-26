@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "2a22454b-fb7f-47b0-bbb2-74651bf12aff",
+		"name": "AdPredictiveMockNotifications",
+		"description": "Mock API created as demo for AdPredictive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Put Preferences",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\": 4,\r\n\"userPrefs\": {\r\n\"newCommentNotificaiton\": true,\r\n\"campaignStatusChangedNotificaiton\": true,\r\n\"newReportAvailableNotification\": true\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44373/api/preferences/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44373",
+					"path": [
+						"api",
+						"preferences",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Preferences",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44373/api/preferences/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44373",
+					"path": [
+						"api",
+						"preferences",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Preferences By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44373/api/preferences/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44373",
+					"path": [
+						"api",
+						"preferences",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
